@@ -1,15 +1,33 @@
-# Basic Sample Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+# Simple MultiSig Wallet
 
-Try running some of the following tasks:
+Simple MultiSig Wallet was made as a project for the [Cadena](https://cadena.dev/) course "Ethereum 101".
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+### !DO NOT USE IT!
+There's a lot of debug features that should never be deployed in Mainnets!
+
+## Installation
+
+Use the package manager [npm](https://www.npmjs.com/) to install the environement.
+
+```bash
+npm install
 ```
+Make sure to create a ```.env``` file with your Alchemy/Infura api url and the private key of the contract creator's wallet.
+```
+ALCHEMY_RINKEBY_URL=<URL>
+RINKEBY_PRIVATE_KEY=<PRIVATE KEY>
+```
+
+## Usage
+
+This project use [hardhat](https://hardhat.org/), deploy your smartcontract with the following command :
+```bash
+npx hardhat --network rinkeby
+```
+
+## Contributing
+This project won't be continued.
+
+## License
+[GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/)
